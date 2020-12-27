@@ -4,7 +4,7 @@ from django.shortcuts import render
 def index(request):
     pass
 
-def listing(request):
+def listing(request, id):
     pass
 
 def search(request):
