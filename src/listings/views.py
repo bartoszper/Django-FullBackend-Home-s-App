@@ -4,7 +4,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 def index(request):
-    listings = Listing.objects.all()
+    #Order by newset and filter by is published
+    listings = Listing.objects.order_by('-list_date').filter(is_published=True)
     #Pagination
     paginator = Paginator(listings, 3)
     page_number = request.GET.get('page')
