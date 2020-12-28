@@ -3,3 +3,4 @@
 Components :
 
 - Custom admin panel
+- Pagination
