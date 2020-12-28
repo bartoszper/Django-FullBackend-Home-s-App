@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from realtors.models import Realtor
 
 # Create your models here.
 
@@ -26,3 +27,8 @@ class Listing(models.Model):
     photo_4 = models.ImageField(upload_to='photos/%Y/%M/%D/', blank =True)
     photo_5 = models.ImageField(upload_to='photos/%Y/%M/%D/', blank =True)
     photo_6 = models.ImageField(upload_to='photos/%Y/%M/%D/', blank =True)
+
+
+    def __str__(self):
+        return self.title
+    
