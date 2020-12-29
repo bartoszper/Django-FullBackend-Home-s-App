@@ -19,6 +19,6 @@ def about(request):
 
     context = {
         'realtors': realtors,
-        'mvp_realtors': mvp_realtors
+        'mvp_realtors': mvp_realtors,
     }
     return render(request, 'pages/about.html', context)
