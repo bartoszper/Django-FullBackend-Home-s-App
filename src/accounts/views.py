@@ -30,6 +30,9 @@ def register(request):
                     # auth.login(request, user)
                     # messages.success(request,'You are logged in')
                     # return redirect('index') 
+                    user.save()
+                    messages.success(request,'Account has been created') 
+                    return redirect('login')
        else:
            messages.error(request,'Password do not match') 
            return redirect('register')   
