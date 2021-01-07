@@ -9,3 +9,5 @@ Components :
 - Dynamic URL's
 - Email's
 - Login/ Logout
+- ORM
+- Search options
