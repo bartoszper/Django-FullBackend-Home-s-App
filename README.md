@@ -6,3 +6,6 @@ Components :
 - Custom admin panel
 - Pagination
 - Humanize module
+- Dynamic URL's
+- Email's
+- Login/ Logout
